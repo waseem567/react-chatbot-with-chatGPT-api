@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-bar{
+  width: 20vw;
+  height: 100vh;
+  background: #ebebeb;
+}
+.main-page{
+  width: 80vw;
+  height: 100vh;
+}
