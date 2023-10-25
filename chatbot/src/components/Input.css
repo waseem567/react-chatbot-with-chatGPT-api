@@ -8,4 +8,33 @@
     background: #ebebeb;
     margin: 10px auto;
     font-size: 15px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* response.css */
+.response{
+    color: white;
+    border-radius: 15px;
+    padding: 10px 0px;
+    width: 90%;
+    margin: 0;
+    display: flex;
+    
+}
+.end{
+    justify-content: end;
+}
+.start{
+    justify-content: start;
+    margin-left: 10px;
+}
+.response .response-body {
+    background: #44b4fc; 
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
 }

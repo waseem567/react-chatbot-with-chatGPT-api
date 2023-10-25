@@ -6,13 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 .side-bar{
   width: 20vw;
   height: 100vh;
   background: #ebebeb;
+  box-sizing: border-box;
 }
 .main-page{
   width: 80vw;
   height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
 }
