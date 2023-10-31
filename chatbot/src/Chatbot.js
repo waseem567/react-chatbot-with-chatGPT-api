@@ -2,8 +2,7 @@
 import React, {useState} from "react";
 import "./App.css";
 import Loader from "./components/Loader";
-const apiKey = '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'; 
-const apiUrl = 'https://api.openai.com/v1/chat/completions';
+
 
 const Chatbot = () => {
     const [query, setQuery] = useState("");
@@ -17,11 +16,11 @@ const Chatbot = () => {
             messages: [{ role: 'user', content: query }],
             temperature: 0.7,
           };
-        fetch(apiUrl, {
+        fetch(process.env.REACT_APP_CHAT_GPT_URL, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': `Bearer ${apiKey}`,
+              'Authorization': `Bearer ${process.env.REACT_APP_API_KEY}`,
             },
             body: JSON.stringify(requestData),
           })
@@ -35,7 +34,6 @@ const Chatbot = () => {
               console.error('Error:', error);
             });
     };
-    
    
   return (
     
